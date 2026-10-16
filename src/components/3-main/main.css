@@ -1,0 +1,196 @@
+
+main{
+  display: flex;
+  /* gap:30px */
+}
+main .left-section{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+main .left-section button{
+    background-color: var(--newbg);
+    
+  
+
+  padding: 10px 10px;
+  
+  width: 150px;
+  color: var(--tilte);
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  border-radius: 5px;
+
+}
+main .left-section button.active{
+  border: 1px solid var(--blue);
+
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  opacity: 1;
+  
+
+}
+.light main .left-section button.active{
+background-color: rgba(24, 24, 27, 0.732);
+opacity: 0.9;
+  
+
+}
+
+main .left-section button:hover{
+opacity: 1;
+
+}
+
+button:disabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* right section */
+main .cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  /* border:1px solid red; */
+  flex-grow: 1;
+  justify-content: center;
+}
+ main .cards h2{
+color:var(--blue) ;
+
+}
+main .right-section{
+  border: 1px solid rgba(93,188,252,0.3);
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  transition: 0.3s;
+  border-radius: 5px;
+  background: linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05));
+
+
+}
+main .right-section:hover{
+border: 1px solid var(--blue);
+transform: rotate(1deg) scale(1.01);
+
+cursor: pointer;
+
+}
+main .right-section .img{
+width: 100%;
+border-radius: 5px;
+  
+
+}
+main .right-section .img img{
+width: 100%;
+  border-radius: 5px;
+  height: 150px;
+
+}
+main .right-section .content{
+width: 100%;
+display: flex;
+flex-direction: column;
+gap:20px;
+padding: 0 15px;
+  
+
+}
+main .right-section .content h1{
+color: var(--title);
+  
+
+}
+main .right-section .content p{
+color: var(--subtitle);
+font-size: 12px;
+line-height: 20px;
+  
+
+}
+main .right-section .content .icons{
+color: var(--subtitle);
+font-size: 14px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+  
+
+}
+main .right-section .content .icons .icon1{
+display: flex;
+gap:10px;
+  
+
+}
+main .right-section .content .icons .icon1 a:hover{
+color:  var(--title);
+  
+
+}
+
+main .right-section .content .icons a{
+font-size: 16px;
+color: var(--subtitle);
+}
+main .right-section .content .icons .icon2{
+display: flex;
+align-items: center;
+}
+main .right-section .content .icons .icon2 a{
+color: var(--blue);
+}
+
+
+@media (max-width:600px) {
+main{
+  flex-direction: column;
+  gap: 30px;
+}
+main .left-section{
+
+  flex-direction: row;
+  gap:10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  
+}
+
+
+@media (max-width:500px) {
+
+main .left-section button{
+  /* background-color: rgba(36,37,46,1); */
+    background-color: var(--bgHeader);
+  padding: 10px 10px;
+  
+  width: 90px;
+  color: var(--title);
+  /* opacity: 0.8; */
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  border-radius: 5px;
+
+}
+main .right-section{
+
+  width: 250px;
+
+
+}
+
+  
+}
+
+

@@ -1,0 +1,79 @@
+/* section */
+/* left-section */
+/* right-section */
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+}
+.hero .left-section{
+  flex-grow: 1;
+
+}
+.hero .right-section{
+  width: 100%;
+  transform: translate(100px,50px);
+
+}
+.hero .left-section img{
+  width: 80px;
+  padding: 1px;
+  border: 1px solid darkorange;
+  border-radius: 50%;
+  box-shadow: 2px 2px 40px rgba(203,200,200,0.586) inset;
+}
+.hero .left-section .icon-verified{
+color: var(--blue);
+}
+.hero .avatar{
+  display: flex;
+  align-items: end;
+  margin-bottom: 10px;
+  gap: 10px;
+  min-height: 80px;
+
+}
+.hero h1{
+  color: var(--new);
+  margin-bottom: 20px;
+  font-size: 50px;
+  margin-top: 20px;
+  line-height: 80px;
+}
+.hero p{
+  color: var(--subtitle);
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 25px;
+
+
+}
+.hero .btns{
+  display: flex;
+  gap:20px
+}
+.hero .btns span{
+  font-size: 17px;
+  cursor: pointer;
+  color: var(--subtitle);
+  transition: 0.3s;
+
+
+}
+.hero .btns span:hover{
+  color: var(--icon-hover);
+  font-size: 20px;
+  
+
+
+}
+
+@media (max-width:1250px) {
+.hero .right-section{
+    display: none;
+  }
+  
+}
+

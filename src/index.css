@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.1px;
+}
+
+:root{
+  --primary:#000;
+    --secondary:rgb(24 24 27);
+    --border:rgba(63,63,70,0.4);
+    --title:rgb(244,244,245);
+    --subtitle:rgb(161,161,170);
+    --bgHeader:rgb(39,39,42);
+    --blue:rgb(93,188,252);
+    --icon-hover:#d4d4d8;
+    --container-padding:50px;
+    --new:rgb(244,244,245);
+    --newbg:rgb(39,39,42);
+}
+
+/* .light{
+  --primary:rgb(250,250,250);
+    --secondary:rgb(255,255,255);
+    --border:rgba(202,202,202,0.518);
+    --title:rgb(232, 232, 237);
+    --subtitle:rgb(82,82,91);
+    --bgHeader:rgb(253,253,253);
+    --blue:rgb(0,149,246);
+    --icon-hover:#333;
+    --container-padding:50px;
+    
+
+} */
+
+.light{
+  --primary:rgb(250,250,250);
+  --new:black;
+  /* --btn:white */
+  --newbg:gray;
+    --secondary:rgb(255,255,255);
+    --border:rgba(202,202,202,0.518);
+    --title:rgb(232, 232, 237);
+    --subtitle:rgb(82,82,91);
+    --bgHeader:rgb(253,253,253);
+    --blue:rgb(0,149,246);
+    --icon-hover:#333;
+    --container-padding:50px;
+}
+
+body{
+  
+  background-color: var(--primary);
+  color: white;
+
+}
+
+.container{
+  border: 2px solid var(--border);
+  width: 80%;
+  margin: 0px auto;
+  background-color: var(--secondary);
+  padding: 0 var(--container-padding);
+
+}
+.divider{
+  border-bottom:1px solid var(--border);
+
+  margin: 3rem 0;
+  width: calc(100% + var(--container-padding) + var(--container-padding));
+  margin-left: calc(var(--container-padding)*-1);
+
+}
+
+li{
+  list-style: none;
+
+}
+a{
+  text-decoration: none;
+  /* color: initial; */
+}
+
+/* screen <1000 */
+
+@media (max-width:1000px) {
+  .container{
+    --container-padding:30px;
+    width: 90%;
+    padding: 0 var(--container-padding);
+  }
+
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #494949;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #989797;
+}
+
+.scroll2Top{
+  all: unset;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(25,118,210,0.85);
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  border: rgba(25,118,210,0.85);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.scroll2Top:active{
+transform: scale(0.9);
+}
+.scroll2Top:hover{
+
+  background-color: rgba(25,118,210);
+
+}
+
+@media (max-width:600px) {
+  .container{
+    --container-padding:30px
+    width: 100%;
+    padding: 0 var(--container-padding);
+  }
+  .scroll2Top{
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+
+  opacity: 0.5;
+
+}
+    /* .divider{
+      width: calc(100% + 30px + 30px);
+  margin-left: -30px;
+  } */
+  
+}
+
+.rr{
+  background-color: red;
+}

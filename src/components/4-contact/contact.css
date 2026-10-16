@@ -1,0 +1,167 @@
+.contact .top h1{
+  display: flex;
+  gap: 10px;
+align-items: center;
+}
+.contact .top{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.contact .top h1 span:first-child {
+  color: var(--subtitle);
+  font-size: 26px;
+
+}
+.contact .top h1 span:last-child {
+  color: var(--new);
+}
+.contact .top p {
+  color: var(--subtitle);
+  font-size: 14px;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/* .contact form{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+} */
+.contact form label{
+  font-size: 14px;
+  color: var(--subtitle);
+}
+
+.contact .two{
+  display: flex;
+  justify-content: space-between;
+  
+
+  gap:30px
+}
+
+.contact .two .right{
+  transform: translateY(-50px);
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+  align-items: start;
+}
+.contact h2{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact .two  input, .contact textarea{
+  all: unset;
+  border-radius: 5px;
+  width: 250px;
+  color: var(--subtitle);
+
+  background-color: rgba(63,63,70,0.15);
+  border: 1px solid rgb(63 63 70);
+  padding: 7px 10px ;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.contact textarea{
+  min-height: 120px;
+  resize:vertical ;
+}
+
+
+.contact .two  input:focus, .contact textarea:focus{
+  border:1px solid rgb(45 212 191)
+}
+.contact .two  input:hover, .contact textarea:hover{
+  border:1px solid rgb(45 212 191)
+}
+.contact .two .left button{
+    background-color: rgba(36,37,46,1);
+  padding: 10px 30px;
+
+  color: var(--title);
+ border:1px solid rgb(63 63 70);
+  cursor: pointer;
+  transition: 0.3s;
+  /* border: none; */
+  border-radius: 5px;
+margin-right: auto;
+
+
+}
+.contact .two .left button:hover{
+transform: scale(0.9);
+
+}
+
+@media (max-width:600px) {
+    .contact .right{
+  
+  visibility: hidden;
+}
+.contact .two{
+  flex-direction: column;
+}
+  .contact h2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* align-items: center;
+    justify-content: center; */
+    
+  
+  }
+
+  form{
+  /* text-align: center; */
+  
+    width: 85%;
+    /* margin: auto; */
+  }
+  .contact form h2{
+    width: 100%;
+  }
+    .contact form h2 label{
+  
+  
+    margin-right: auto;
+  }
+
+  .contact button{
+  margin: auto;
+  }
+
+  .contact .two  input, .contact textarea{
+width: 100%;
+
+padding: 5px 0;
+margin: 0;
+}
+
+
+
+
+  
+}
+
+@media (max-width:1250px) {
+  .contact-animation{
+    display: none;
+  
+}
+  
+}
