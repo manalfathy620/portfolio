@@ -37,13 +37,16 @@ function handleclick() {
 
       <nav>
         <ul className="">
-          <li>
-            <a href="">About</a>
+            <li>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Articles</a>
+            <a href="#main">Projects</a>
           </li>
           <li>
+            <a href="#contact">Contact</a>
+          </li>
+          {/* <li>
             <a href="">Projects</a>
           </li>
           <li>
@@ -51,7 +54,7 @@ function handleclick() {
           </li>
           <li>
             <a href="">Uses</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
 

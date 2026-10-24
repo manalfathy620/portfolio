@@ -20,16 +20,16 @@ const arr = [
     track: "js",
     link: "https://stupendous-hamster-516722.netlify.app/",
   },
+  // {
+  //   id: 3,
+  //   img: "/images/html1.png",
+  //   title: "Perfume Landing Page",
+  //   desc: "A responsive perfume website built with HTML and CSS.",
+  //   track: "html&css",
+  //   link: "https://manalfathy620.github.io/p-perfume/",
+  // },
   {
     id: 3,
-    img: "/images/html1.png",
-    title: "Perfume Landing Page",
-    desc: "A responsive perfume website built with HTML and CSS.",
-    track: "html&css",
-    link: "https://manalfathy620.github.io/p-perfume/",
-  },
-  {
-    id: 4,
     img: "/images/html5.png",
     title: "Coffee Landing Page",
     desc: "A responsive coffee website built with HTML and CSS.",
@@ -37,7 +37,7 @@ const arr = [
     link: "https://manalfathy620.github.io/coffee1/",
   },
   {
-    id: 5,
+    id: 4,
     img: "/images/port.png",
     title: "Portfolio",
     desc: "A personal portfolio website built to showcase my projects and skills.",
@@ -45,23 +45,23 @@ const arr = [
     link: "https://peaceful-fenglisu-f98d34.netlify.app/",
   },
   {
-    id: 6,
+    id: 5,
     img: "/images/adan.png",
     title: "Adhan App",
     desc: "A prayer times application using an external API to display prayer times.",
     track: "js",
     link: "https://admirable-shortbread-bf47bc.netlify.app/",
   },
+  // {
+  //   id: 6,
+  //   img: "/images/weatherr.png",
+  //   title: "Weather App",
+  //   desc: "A weather application that displays weather information using an API.",
+  //   track: "js",
+  //   link: "https://heroic-brigadeiros-112f33.netlify.app/",
+  // },
   {
-    id: 7,
-    img: "/images/weatherr.png",
-    title: "Weather App",
-    desc: "A weather application that displays weather information using an API.",
-    track: "js",
-    link: "https://heroic-brigadeiros-112f33.netlify.app/",
-  },
-  {
-    id: 8,
+    id: 6,
     img: "/images/todo.png",
     title: "Todo App",
     desc: "A Todo application for adding, editing, deleting, and managing tasks.",
@@ -69,7 +69,7 @@ const arr = [
     link: "https://manalfathy620.github.io/p-todo/",
   },
   {
-    id: 9,
+    id: 7,
     img: "/images/jss.png",
     title: "CRUD System",
     desc: "A CRUD application for creating, reading, updating, and deleting data.",
@@ -77,23 +77,23 @@ const arr = [
     link: "https://manalfathy620.github.io/cruds/",
   },
   {
-    id: 10,
+    id: 8,
     img: "/images/upload.png",
     title: "Image Filter",
     desc: "An image filtering project with interactive controls and effects.",
     track: "js",
     link: "https://manalfathy620.github.io/p-filterimage/",
   },
+  // {
+  //   id: 11,
+  //   img: "/images/image.png",
+  //   title: "Weather App",
+  //   desc: "A weather application built with React to display weather information.",
+  //   track: "node",
+  //   link: "https://weather-jfuwic55e-sef18.vercel.app/",
+  // },
   {
-    id: 11,
-    img: "/images/image.png",
-    title: "Weather App",
-    desc: "A weather application built with React to display weather information.",
-    track: "node",
-    link: "https://weather-jfuwic55e-sef18.vercel.app/",
-  },
-  {
-    id: 12,
+    id: 9,
     img: "/images/dash.png",
     title: "Dashboard",
     desc: "A responsive admin dashboard built with React and MUI.",
@@ -101,7 +101,7 @@ const arr = [
     link: "https://dashboard-sef18.vercel.app/",
   },
 {
-  id: 13,
+  id: 10,
   img: "/images/admin.png",
   title: "Admin Dashboard",
   desc: "A responsive e-commerce admin dashboard built with React,live api.",
@@ -109,7 +109,7 @@ const arr = [
   link: "https://online-store-dashboard-one.vercel.app/login",
 },
 {
-  id: 14,
+  id: 11,
   img: "/images/store.png",
   title: "Online Store ",
   desc: "A responsive store e-commerce , integrated with a live REST API to manage products, users, and store data efficiently.",
@@ -170,7 +170,7 @@ const totalPages = Math.ceil(q.length / itemsPerPage);
         <button onClick={()=>setarrr("html&css")} className={arrr==="html&css"?"active":""}>HTML & CSS</button>
         <button onClick={()=>setarrr("js")} className={arrr==="js"?"active":""}>JavaScript</button>
         <button onClick={()=>setarrr("react")} className={arrr==="react"?"active":""}>React & MUI</button>
-        <button onClick={()=>setarrr("node")} className={arrr==="node"?"active":""}>Node & Express</button>
+        {/* <button onClick={()=>setarrr("node")} className={arrr==="node"?"active":""}>Node & Express</button> */}
       </div>
 <div className="cards">
     <AnimatePresence>
@@ -191,12 +191,12 @@ const totalPages = Math.ceil(q.length / itemsPerPage);
               
             </p>
             <div className="icons">
-              <div className="icon1">
+              {/* <div className="icon1">
                 <a href="" className="icon-link"></a>
                 <a href="" className="icon-github"></a>
-              </div>
+              </div> */}
               <div className="icon2">
-                <a href={card.link} style={{ }}>view</a>
+                <a href={card.link} style={{ }}>view &nbsp;</a>
                 <a href="" className="icon-arrow-right"></a>
               </div>
             </div>

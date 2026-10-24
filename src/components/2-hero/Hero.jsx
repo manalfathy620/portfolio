@@ -16,10 +16,13 @@ export default function Hero() {
         <motion.h1 initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2}}>Full Stack Developer & Software Engineer.</motion.h1>
         <p>I’m Manal, a passionate Full Stack Developer who builds modern, responsive web applications with React, Node.js, Express, and MongoDB. I enjoy turning ideas into clean, functional, and scalable digital experiences.</p>
         <div className="btns">
-          <span className="icon-github"></span>
-          <span className="icon-twitter"></span>
-          <span className="icon-linkedin"></span>
-          <span  className="icon-instagram"></span>
+          <a href="https://github.com/manalfathy620">  <span className="icon-github"></span></a>
+        {/* <a href="https://github.com/manalfathy620">    <span className="icon-twitter"></span></a> */}
+        <a href="https://www.linkedin.com/in/manal-fathi-a47676326/">   <span className="icon-linkedin"></span></a>
+        {/* <a href="https://github.com/manalfathy620">   <span  className="icon-instagram"></span></a> */}
+        
+        
+        
         </div>
 
       </div>
