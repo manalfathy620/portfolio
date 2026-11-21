@@ -116,6 +116,14 @@ const arr = [
   track: "react",
   link: "https://online-store-ruddy-two.vercel.app/",
 },
+{
+  id: 12,
+  img: "/images/farhati.png",
+  title: "Farhati – Wedding Planner",
+  desc: "A responsive wedding planning website that allows users to explore wedding services, view packages, calculate budgets, and submit consultation and booking requests. Built with React, Node.js, Express, and MongoDB.",
+  track: "node",
+  link: "https://farhati-fullstack.vercel.app/",
+},
 
 ];
   const[arrr,setarrr]=useState("allprojects")
