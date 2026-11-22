@@ -178,7 +178,7 @@ const totalPages = Math.ceil(q.length / itemsPerPage);
         <button onClick={()=>setarrr("html&css")} className={arrr==="html&css"?"active":""}>HTML & CSS</button>
         <button onClick={()=>setarrr("js")} className={arrr==="js"?"active":""}>JavaScript</button>
         <button onClick={()=>setarrr("react")} className={arrr==="react"?"active":""}>React & MUI</button>
-        <button onClick={()=>setarrr("node")} className={arrr==="node"?"active":""}>Node & Express</button>
+        <button onClick={()=>setarrr("node")} className={arrr==="node"?"active":""}>fullstack</button>
       </div>
 <div className="cards">
     <AnimatePresence>
