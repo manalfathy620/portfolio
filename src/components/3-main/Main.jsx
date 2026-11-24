@@ -105,7 +105,7 @@ const arr = [
   img: "/images/admin.png",
   title: "Admin Dashboard",
   desc: "A responsive e-commerce admin dashboard built with React,live api.",
-  track: "react",
+  track: "fullstack",
   link: "https://online-store-dashboard-one.vercel.app/login",
 },
 {
@@ -113,7 +113,7 @@ const arr = [
   img: "/images/store.png",
   title: "Online Store ",
   desc: "A responsive store e-commerce , integrated with a live REST API to manage products, users, and store data efficiently.",
-  track: "react",
+  track: "fullstack",
   link: "https://online-store-ruddy-two.vercel.app/",
 },
 {
